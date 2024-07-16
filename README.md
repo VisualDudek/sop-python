@@ -113,4 +113,8 @@ pyenv local myenv-3.12
   update: Bump lodash version to 4.17.21
   ```
 
+## 5. Logging
 
+### 5.1 Setting Up Logging
+- use my [logging_template](https://github.com/VisualDudek/python_logging_template)
+  - for most usecases use setup from `app.py` with `logging_config.yaml`
