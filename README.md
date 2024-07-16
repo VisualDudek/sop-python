@@ -10,7 +10,7 @@ This SOP outlines the procedures and best practices for Python development to en
 ## 2. Environment Setup
 
 ### 2.1 Install Python
-- ~~Download the latest version of Python from [python.org](https://www.python.org/downloads/).~~
+- ~~Download the latest version of Python from [python.org](https://www.python.org/downloads/).~~ -> use `pyenv` or devcontainer
 
 ### 2.2 Set Up Virtual Environment
 - Use virtual environments to manage dependencies for different projects.
@@ -39,6 +39,7 @@ pyenv local myenv-3.12
   ```bash
   pip install -r requirements.txt
   ```
+
 ## 3. Coding Standards
 
 ### 3.1 Follow PEP 8
