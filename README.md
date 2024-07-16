@@ -14,7 +14,7 @@ This SOP outlines the procedures and best practices for Python development to en
 
 ### 2.2 Set Up Virtual Environment
 - Use virtual environments to manage dependencies for different projects.
--  Do not use `python -m venv`
+-  Do not use `python -m venv`, more effective tools are avaliable.
 
 #### 2.2a Setup `pyenv` or use devcontainer
 - (install python version):
