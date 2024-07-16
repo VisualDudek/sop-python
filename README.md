@@ -32,6 +32,9 @@ pyenv local myenv-3.12
 
 #### 2.2b Setup devcontainer
 - use pre-build Python image
+- use [devcontainer gh repo](https://github.com/devcontainers)
+  - [templates](https://github.com/devcontainers/templates) or
+  - [pre-built](https://github.com/devcontainers/images)
 
 ### 2.3 Install Dependencies
 - Create a `requirements.txt` file to list project dependencies.
