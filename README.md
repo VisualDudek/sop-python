@@ -105,11 +105,12 @@ pyenv local myenv-3.12
   ```
   feat: Add new feature
   fix: Fix a bug
-  docs: Update documentation
+  docs: Update documentation (e.g. Update README with setup instructions)
   style: Improve code style (e.g., formatting)
   refactor: Refactor code (no functional changes)
   test: Add or update tests
   chore: Miscellaneous tasks (e.g., build process)
+  update: Bump lodash version to 4.17.21
   ```
 
 
