@@ -44,10 +44,15 @@ pyenv local myenv-3.12
   ```
 
 ## 3. Coding Standards
+**The point of having style guidelines is to have a common vocabulary of coding so people can concentrate on what you’re saying rather than on how you’re saying it.**
 
 ### 3.1 Follow PEP 8
 - Adhere to PEP 8, the Python style guide: [PEP 8](https://www.python.org/dev/peps/pep-0008/)
-- Use tools like `flake8` or `pylint` to check for compliance.
+- ~~Use tools like `flake8` or `pylint` to check for compliance.~~
+- Use `ruff` as linter.
+
+### 3.1a Follow Google Python Style Guide
+- [styleguide](https://google.github.io/styleguide/pyguide.html)
 
 ### 3.2 Naming Conventions
 - Use descriptive names for variables, functions, and classes.
@@ -59,18 +64,21 @@ pyenv local myenv-3.12
 ### 3.3 Commenting and Documentation
 - Use docstrings for modules, classes, and functions.
 - Follow PEP 257 for docstring conventions: [PEP 257](https://www.python.org/dev/peps/pep-0257/)
-- Example:
+- Example: use `Args:` instead of `Parameters:`
   ```python
   def add(a, b):
       """
       Add two numbers.
 
-      Parameters:
-      a (int): The first number.
-      b (int): The second number.
+      Args:                         # Parameters:
+        a (int): The first number.
+        b (int): The second number.
 
       Returns:
-      int: The sum of the two numbers.
+        int: The sum of the two numbers.
+
+      Raises:
+        ValueError: Description of the exception.
       """
       return a + b
   ```
