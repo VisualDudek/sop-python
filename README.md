@@ -36,6 +36,10 @@ pyenv local myenv-3.12
   - [templates](https://github.com/devcontainers/templates) or
   - [pre-built](https://github.com/devcontainers/images)
 
+##### 2.2b.1 Custom devcontainer.json
+- custom vscode e.g. `git-graph`
+- custom features e.g. `common-utils:2` and `"configureZshAsDefaultShell": "true"`
+
 ### 2.3 Install Dependencies
 - Create a `requirements.txt` file to list project dependencies.
 - Install dependencies:
