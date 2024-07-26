@@ -47,6 +47,29 @@ pyenv local myenv-3.12
   pip install -r requirements.txt
   ```
 
+## TODO Repo File Structure
+Organize your project files in a logical structure:
+```md
+my_project/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── setup.py
+├── src/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── module/
+│   │   ├── __init__.py
+│   │   └── module_code.py
+├── tests/
+│   ├── __init__.py
+│   └── test_main.py
+├── .devcontainer/
+│   └── devcontainer.json
+└── docs/
+    └── index.md
+```
+
 ## 3. Coding Standards
 **The point of having style guidelines is to have a common vocabulary of coding so people can concentrate on what you’re saying rather than on how you’re saying it.**
 
