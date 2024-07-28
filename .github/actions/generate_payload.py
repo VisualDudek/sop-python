@@ -1,7 +1,7 @@
 import json
 
 # Read the contents of the README file
-with open('README.md', 'r') as file:
+with open('../../README.md', 'r') as file:
     readme_content = file.read()
 
 core_prompt_001 = "I have developed a Standard Operating Procedure (SOP) for Python programming, and the draft is provided below. I am looking to enhance its content and ensure it covers all essential aspects comprehensively. Could you provide a detailed list of topics and areas that I can add or improve in the SOP? Specifically, I am interested in best practices, coding standards, debugging techniques, documentation guidelines, testing procedures, and any other critical elements that should be included to make the SOP more effective and useful for Python developers. Below is my current draft SOP for your reference."
