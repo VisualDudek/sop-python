@@ -1,5 +1,5 @@
 [![How to improve?](https://github.com/VisualDudek/sop-python/actions/workflows/blank.yml/badge.svg)](https://github.com/VisualDudek/sop-python/actions/workflows/blank.yml)
-[![AI](https://img.shields.io/badge/AI improve-blue)](https://github.com/VisualDudek/sop-python/blob/main/ai.md)
+[![AI](https://img.shields.io/badge/AI_improve-blue)](https://github.com/VisualDudek/sop-python/blob/main/ai.md)
 
 # sop-python
 Standard Operation Procedure for Python
