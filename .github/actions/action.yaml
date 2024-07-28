@@ -3,7 +3,11 @@ description: "A custom GitHub Action to run my Python and shell code"
 runs:
   using: "composite"
   steps:
-    - name: Run Python script
+    - name: Run Python shell
       shell: python
       run: |
         print(f"Hello world")
+
+    - name: Generate payload
+      shell: bash
+      run: python generate_payload.py
