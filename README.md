@@ -1,3 +1,5 @@
+[![How to improve?](https://github.com/VisualDudek/sop-python/actions/workflows/blank.yml/badge.svg)](https://github.com/VisualDudek/sop-python/actions/workflows/blank.yml)
+
 # sop-python
 Standard Operation Procedure for Python
 
