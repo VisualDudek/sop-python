@@ -17,3 +17,13 @@ runs:
       run: |
         cd $GITHUB_ACTION_PATH
         python generate_payload.py
+
+    - name: Hit openai API with curl
+      shell: bash
+      run: |
+        curl https://api.openai.com/v1/chat/completions \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer $OPENAI_API_KEY" \
+        -d @payload.json \
+        -o out.json
+
