@@ -9,7 +9,7 @@ runs:
         print(f"Hello world")
 
     - name: Where are you?
-      sehll: bash
+      shell: bash
       run: pwd
 
     - name: Generate payload
