@@ -1,0 +1,9 @@
+name: "My Custom Python and Shell Action"
+description: "A custom GitHub Action to run my Python and shell code"
+runs:
+  using: "composite"
+  steps:
+    - name: Run Python script
+      shell: python
+      run: |
+        print(f"Hello world")
