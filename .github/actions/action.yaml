@@ -8,6 +8,10 @@ runs:
       run: |
         print(f"Hello world")
 
+    - name: Where are you?
+      sehll: bash
+      run: pwd
+
     - name: Generate payload
       shell: bash
       run: python generate_payload.py
