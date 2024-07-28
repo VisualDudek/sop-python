@@ -148,3 +148,13 @@ my_project/
 ### 5.1 Setting Up Logging
 - use my [logging_template](https://github.com/VisualDudek/python_logging_template)
   - for most usecases use setup from `app.py` with `logging_config.yaml`
+ 
+## 6. Testing
+
+### 6.1 Write Tests
+- Use `unittest` or `pytest` for testing.
+- Place tests in a `tests` directory.
+  
+### 6.2 Test Coverage
+- Aim for high test coverage.
+- Use tools like `coverage.py` to measure coverage.
