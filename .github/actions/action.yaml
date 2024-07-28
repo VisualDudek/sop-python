@@ -33,6 +33,6 @@ runs:
       run: |
         cd $GITHUB_ACTION_PATH
         jq '.choices[0].message.content' out.json > content.txt
-        sed 's/\\n/\n\g' content.txt > formatted.md
+        sed 's/\\n/\n/g' content.txt > formatted.md
         cat formatted.md
 
