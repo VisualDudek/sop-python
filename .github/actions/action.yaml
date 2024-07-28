@@ -27,6 +27,7 @@ runs:
         -H "Authorization: Bearer $OPENAI_API_KEY" \
         -d @payload.json \
         -o out.json
+        cat out.json
 
     - name: Prepare md file
       shell: bash
