@@ -8,32 +8,37 @@ This SOP outlines the procedures and best practices for Python development to en
 
 ## 1 Setup repo
 - Create (public) GitHub repo
--  create `.gitignore` using [gh collection of useful .gitignore templates](https://github.com/github/gitignore)
+- create `.gitignore` using [gh collection of useful .gitignore templates](https://github.com/github/gitignore)
+- use gh cli to list and download your repo
+```bash
+gh repo list
+```
 
 ## 2. Environment Setup
 
 ### 2.1 Install Python
-- ~~Download the latest version of Python from [python.org](https://www.python.org/downloads/).~~ -> use `pyenv` or devcontainer
+- ~~Download the latest version of Python from [python.org](https://www.python.org/downloads/).~~ 
+- ~~use `pyenv`~~
+- use devcontainer ???
+- use `uv`
 
-### 2.2 Set Up Virtual Environment
-- Use virtual environments to manage dependencies for different projects.
--  Do not use `python -m venv`, more effective tools are avaliable.
-
-#### 2.2a Setup `pyenv` or use devcontainer
-- (install python version):
+Viewing Python installations
 ```bash
-pyenv install 3.12
+uv python list
 ```
-- Create a virtual environment:
+Installing a specific version
 ```bash
-pyenv virtualenv 3.12 myenv-3.12
-```
-- Set a local Python version (specific to a directory):
-```bash
-pyenv local myenv-3.12
+uv python install 3.14
 ```
 
-#### 2.2b Setup devcontainer
+### ~~2.2 Set Up Virtual Environment~~
+- ~~Use virtual environments to manage dependencies for different projects.~~
+-  ~~Do not use `python -m venv`, more effective tools are avaliable.~~
+`uv` to rule them all
+
+#### ~~2.2a Setup `pyenv` or use devcontainer~~
+
+#### 2.2b Setup devcontainer [OPTION]
 - use pre-build Python image
 - use [devcontainer gh repo](https://github.com/devcontainers)
   - [templates](https://github.com/devcontainers/templates) or
@@ -44,11 +49,12 @@ pyenv local myenv-3.12
 - custom features e.g. `common-utils:2` and `"configureZshAsDefaultShell": "true"`
 
 ### 2.3 Install Dependencies
-- Create a `requirements.txt` file to list project dependencies.
-- Install dependencies:
+- ~~Create a `requirements.txt` file to list project dependencies.~~
+- ~~Install dependencies:~~
   ```bash
   pip install -r requirements.txt
   ```
+- just use `uv add`
 
 ## TODO Repo File Structure
 Organize your project files in a logical structure:
@@ -81,7 +87,7 @@ my_project/
 - ~~Use tools like `flake8` or `pylint` to check for compliance.~~
 - Use `ruff` as linter.
 
-### 3.1a Follow Google Python Style Guide
+### 3.1a Follow Google Python Style Guide [OPTION]
 - [styleguide](https://google.github.io/styleguide/pyguide.html)
 
 ### 3.2 Naming Conventions
@@ -125,8 +131,8 @@ my_project/
 ### 4.2 Branching Strategy
 - Use a branching strategy like Git Flow or feature branches.
 - Example:
-  - `main` or `master` for production code.
-  - `develop` for development.
+  - `main` ~~or `master`~~ for production code.
+  - `dev` for development.
   - Feature branches: `feature/feature-name`
 
 ### 4.3 Commit Messages
