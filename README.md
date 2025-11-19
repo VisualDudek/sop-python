@@ -106,6 +106,17 @@ my_project/
   - Classes: `CamelCase`
   - Constants: `UPPER_CASE`
 
+### 3.3 File Naming Conventions
+- Use `snake_case` for Python file names (e.g., `my_module.py`, `data_processing.py`)
+- **Do NOT** start file names with numbers (e.g., ~~`001_setup.py`~~, ~~`01-config.py`~~)
+  - Python identifiers cannot start with numbers, making these files un-importable
+- **Do NOT** use hyphens in file names (e.g., ~~`data-processing.py`~~)
+  - Hyphens are not valid in Python module names and will cause import errors
+  - This is especially problematic for pytest which needs to import your modules
+- Examples:
+  - ✅ Good: `user_authentication.py`, `test_user_auth.py`
+  - ❌ Bad: `01-user-authentication.py`, `user-authentication.py`
+
 ### 3.3 Commenting and Documentation
 - Use docstrings for modules, classes, and functions.
 - Follow PEP 257 for docstring conventions: [PEP 257](https://www.python.org/dev/peps/pep-0257/)
