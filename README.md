@@ -55,6 +55,15 @@ uv python install 3.14
   pip install -r requirements.txt
   ```
 - just use `uv add`
+- get familiar with dependencies of given farmework e.g. reflex:
+  ```bash
+  uv pip tree
+  uv pip tree -d, --depth <DEPTH>
+  ```
+  - downgrade package
+  ```bash
+  uv pip install reflex==0.8.19
+  ```
 
 ## TODO Repo File Structure
 Organize your project files in a logical structure:
@@ -164,3 +173,6 @@ my_project/
 ### 6.2 Test Coverage
 - Aim for high test coverage.
 - Use tools like `coverage.py` to measure coverage.
+
+## 7. AI
+- use Claude CLI / VS Code extension
