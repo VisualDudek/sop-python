@@ -30,6 +30,10 @@ Installing a specific version
 ```bash
 uv python install 3.14
 ```
+Use a specific Python version in the current dir:
+```bash
+uv python pin 3.14
+```
 
 ### ~~2.2 Set Up Virtual Environment~~
 - ~~Use virtual environments to manage dependencies for different projects.~~
