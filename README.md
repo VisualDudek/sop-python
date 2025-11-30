@@ -176,7 +176,8 @@ my_project/
 ## IDE - VSCode
 
 ### Python debugger setup
-To configure the Python debugger to run the current file in the file's directory instead of the project level, add to `.vscode/launch.json`:
+- Toggle Breakpoint - `F9`
+- To configure the Python debugger to run the current file in the file's directory instead of the project level, add to `.vscode/launch.json`:
 ```json
 {
     "version": "0.2.0",
