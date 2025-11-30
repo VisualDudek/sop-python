@@ -173,6 +173,26 @@ my_project/
   update: Bump lodash version to 4.17.21
   ```
 
+## IDE - VSCode
+
+### Python debugger setup
+To configure the Python debugger to run the current file in the file's directory instead of the project level, add to `.vscode/launch.json`:
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File (in file dir)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}" // THIS LINE
+        }
+    ]
+}
+```
+
 ## 5. Logging
 
 ### 5.1 Setting Up Logging
