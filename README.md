@@ -59,6 +59,16 @@ uv python pin 3.14
   pip install -r requirements.txt
   ```
 - just use `uv add`
+- for `.env` files, use `python-dotenv` (package name) and do not install deprecated `dotenv`
+  ```bash
+  uv add python-dotenv
+  # or: uv pip install python-dotenv
+  ```
+  ```python
+  from dotenv import load_dotenv
+
+  load_dotenv()
+  ```
 - get familiar with dependencies of given farmework e.g. reflex:
   ```bash
   uv pip tree
