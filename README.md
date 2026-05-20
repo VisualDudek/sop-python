@@ -60,6 +60,7 @@ uv python pin 3.14
   ```
 - just use `uv add`
 - for `.env` files, use `python-dotenv` (package name) and do not install deprecated `dotenv`
+  - use `.env.example` for the mock/sample environment file
   ```bash
   uv add python-dotenv
   # or: uv pip install python-dotenv
